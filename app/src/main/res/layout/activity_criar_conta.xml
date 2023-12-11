@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".MainActivity"
+  android:background="@color/white">
+
+  <Button
+    android:id="@+id/btn_back"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:layout_marginTop="30dp"
+    android:background="@drawable/back"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/titulo_Screen"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="37dp"
+    android:layout_marginEnd="45dp"
+    android:fontFamily="@font/poppins_semibold"
+    android:text="Criar Conta"
+    android:textSize="18sp"
+    android:textColor="@color/black"
+    android:textAlignment="center"
+    app:layout_constraintStart_toEndOf="@id/btn_back"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    />
+
+
+
+  <ImageView
+    android:id="@+id/treiner_img4"
+    android:layout_width="266dp"
+    android:layout_height="273dp"
+    android:layout_marginStart="17dp"
+    android:layout_marginTop="100dp"
+    android:layout_marginEnd="17dp"
+    android:src="@drawable/treiner_img4"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/titulo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="37dp"
+    android:fontFamily="@font/poppins_medium"
+    android:text="@string/txt_onboarding4_titulo"
+    android:textSize="26sp"
+    android:textColor="@color/black"
+    android:textAlignment="center"
+    app:layout_constraintTop_toBottomOf="@+id/treiner_img4"
+    app:layout_constraintStart_toStartOf="@+id/treiner_img4"
+    app:layout_constraintEnd_toEndOf="@+id/treiner_img4"/>
+
+  <TextView
+    android:id="@+id/subtitulo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:fontFamily="@font/poppins"
+    android:text="@string/txt_onboarding4_subtitulo"
+    android:textAlignment="center"
+    android:textColor="@color/black"
+    android:textSize="14sp"
+    app:layout_constraintEnd_toEndOf="@+id/treiner_img4"
+    app:layout_constraintStart_toStartOf="@+id/treiner_img4"
+    app:layout_constraintTop_toBottomOf="@+id/titulo"/>
+
+
+
+  <androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/btn_apple"
+    android:layout_width="358dp"
+    android:layout_height="58dp"
+    android:layout_marginTop="32dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:background="@drawable/btn_stroke"
+    android:elevation="20dp"
+    android:drawableStart="@drawable/apple"
+    android:paddingStart="20dp"
+    android:paddingEnd="30dp"
+    android:fontFamily="@font/poppins_semibold"
+    android:text="Continuar com a Apple"
+    android:textAllCaps="false"
+    android:textColor="@color/black"
+    android:textSize="18sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/subtitulo"/>
+
+  <androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/btn_google"
+    android:layout_width="358dp"
+    android:layout_height="58dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:background="@drawable/btn_stroke"
+    android:elevation="20dp"
+    android:drawableStart="@drawable/google"
+    android:paddingStart="20dp"
+    android:paddingEnd="30dp"
+    android:fontFamily="@font/poppins_semibold"
+    android:text="Continuar com o Google"
+    android:textAllCaps="false"
+    android:textColor="@color/black"
+    android:textSize="18sp"
+    app:layout_constraintEnd_toEndOf="@id/btn_apple"
+    app:layout_constraintStart_toStartOf="@id/btn_apple"
+    app:layout_constraintTop_toBottomOf="@+id/btn_apple"/>
+
+  <androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/btn_ccEmail"
+    android:layout_width="358dp"
+    android:layout_height="58dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/btn_background"
+    android:elevation="20dp"
+    android:fontFamily="@font/poppins_semibold"
+    android:text="Continuar com um e-mail"
+    android:textAllCaps="false"
+    android:textColor="@color/white"
+    android:textSize="18sp"
+    app:layout_constraintEnd_toEndOf="@id/btn_apple"
+    app:layout_constraintStart_toStartOf="@id/btn_apple"
+    app:layout_constraintTop_toBottomOf="@id/btn_google"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

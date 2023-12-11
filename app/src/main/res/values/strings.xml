@@ -9,5 +9,7 @@
 \npokémon favoritos, configurações e muito \nmais, salvos no aplicativo, mesmo sem \nconexão com a internet.</string>
   <string name="txt_onboarding3_titulo">Está pronto para essa \naventura?</string>
   <string name="txt_onboarding3_sutitulo">Basta criar uma conta e começar a explorar \no mundo dos Pokémon hoje!</string>
+  <string name="txt_onboarding4_titulo">Falta pouco para \nexplorar esse mundo</string>
+  <string name="txt_onboarding4_subtitulo">Como deseja se conectar?</string>
 
 </resources>

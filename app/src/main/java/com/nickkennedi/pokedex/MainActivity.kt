@@ -15,8 +15,8 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnStart.setOnClickListener(){
             val navegarScreeOnboarding02 = Intent(this, Onboarding02Activity::class.java)
-            val options = ActivityOptions.makeCustomAnimation(this,  R.anim.slide_in, R.anim.slide_out)
-            startActivity(navegarScreeOnboarding02, options.toBundle())
+           /* val options = ActivityOptions.makeCustomAnimation(this,  R.anim.slide_in, R.anim.slide_out)*/
+            startActivity(navegarScreeOnboarding02, /*options.toBundle()*/)
         }
 
     }
