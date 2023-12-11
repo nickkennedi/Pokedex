@@ -1,0 +1,13 @@
+<resources>
+  <string name="app_name">Pokedex</string>
+  <string name="txt_titulo_StartScreen">Todos os Pokémons em \num só Lugar</string>
+  <string name="txt_subtitulo_StartScreen">Acesse uma vasta lista de Pokémon de
+\ntodas as gerações já feitas pela Nintendo</string>
+  <string name="txt_onboarding2_titulo">Mantenha sua
+\nPokédex atualizada</string>
+  <string name="txt_onboarding2_subtitulo">Cadastre-se e mantenha seu perfil,
+\npokémon favoritos, configurações e muito \nmais, salvos no aplicativo, mesmo sem \nconexão com a internet.</string>
+  <string name="txt_onboarding3_titulo">Está pronto para essa \naventura?</string>
+  <string name="txt_onboarding3_sutitulo">Basta criar uma conta e começar a explorar \no mundo dos Pokémon hoje!</string>
+
+</resources>
