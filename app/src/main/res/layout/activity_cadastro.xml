@@ -4,6 +4,148 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context=".CadastroActivity">
+  tools:context=".CadastroActivity"
+  android:background="@color/white">
+
+  <ImageView
+    android:id="@+id/btn_back"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:layout_marginTop="30dp"
+    android:src="@drawable/back"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/titulo_Screen"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:layout_marginEnd="45dp"
+    android:fontFamily="@font/poppins_semibold"
+    android:text="Criar Conta"
+    android:textSize="18sp"
+    android:textColor="@color/black"
+    android:textAlignment="center"
+    app:layout_constraintStart_toEndOf="@id/btn_back"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    />
+
+  <TextView
+    android:id="@+id/subtitulo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/poppins"
+    android:layout_marginTop="45dp"
+    android:text="Vamos começar!"
+    android:textAlignment="center"
+    android:textColor="@color/black"
+    android:textSize="26sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/titulo_Screen" />
+
+  <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/edt_nome"
+    android:layout_width="328dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="46dp"
+    style="@style/edt_stroke"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/subtitulo">
+
+    <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/edt_nome_txt"
+      android:layout_width="328dp"
+      android:layout_height="wrap_content"
+      android:maxLength="20"
+      android:hint="Nome"
+      android:inputType="textPersonName"
+      android:maxLines="1"
+      android:textColor="@color/black"
+      android:fontFamily="@font/poppins"
+      android:textSize="16sp"
+      android:textColorHint="@color/black"/>
+  </com.google.android.material.textfield.TextInputLayout>
+
+
+  <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/edt_email"
+    style="@style/edt_stroke"
+    android:layout_width="328dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    app:layout_constraintEnd_toEndOf="@+id/edt_nome"
+    app:layout_constraintStart_toStartOf="@+id/edt_nome"
+    app:layout_constraintTop_toBottomOf="@+id/edt_nome">
+
+    '
+    <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/edt_email_txt"
+      android:layout_width="328dp"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/poppins"
+      android:hint="E-mail"
+      android:inputType="textEmailAddress"
+      android:maxLines="1"
+      android:textColor="@color/black"
+      android:textColorHint="@color/black"
+      android:textSize="16sp" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+
+
+  <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/edt_senha"
+    style="@style/edt_stroke"
+    android:layout_width="328dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    app:endIconMode="custom"
+    app:endIconDrawable="@drawable/eye_true"
+    app:layout_constraintEnd_toEndOf="@+id/edt_nome"
+    app:layout_constraintStart_toStartOf="@+id/edt_nome"
+    app:layout_constraintTop_toBottomOf="@+id/edt_email">
+
+    <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/edt_senha_txt"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/poppins"
+      android:hint="Senha"
+      android:maxLength="18"
+      android:inputType="textPassword"
+      android:maxLines="1"
+      android:textColor="@color/black"
+      android:textColorHint="@color/black"
+      android:textSize="16sp"/>
+
+
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+
+
+  <androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/btn_cadastrar"
+    android:layout_marginBottom="60dp"
+    android:layout_width="358dp"
+    android:layout_height="58dp"
+    android:background="@drawable/btn_background"
+    android:elevation="20dp"
+    android:fontFamily="@font/poppins_semibold"
+    android:text="Criar Conta"
+    android:textAllCaps="false"
+    android:textColor="@color/white"
+    android:textSize="18sp"
+    android:visibility="invisible"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
