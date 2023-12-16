@@ -9,12 +9,16 @@ import android.text.InputType
 import android.text.TextWatcher
 import android.view.MotionEvent
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.core.view.isNotEmpty
 import androidx.core.view.isVisible
 import com.google.android.material.bottomappbar.BottomAppBar
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 import com.nickkennedi.pokedex.R.*
+import com.nickkennedi.pokedex.R.drawable.back
+
+
 import com.nickkennedi.pokedex.R.drawable.eye_false
 import com.nickkennedi.pokedex.R.drawable.eye_true
 import com.nickkennedi.pokedex.databinding.ActivityCadastroBinding
@@ -30,12 +34,6 @@ class CadastroActivity : AppCompatActivity() {
 
 
 
-        binding.edtNomeTxt.addTextChangedListener(textWatcher)
-        binding.edtEmailTxt.addTextChangedListener(textWatcher)
-        binding.edtSenhaTxt.addTextChangedListener(textWatcher)
-
-
-
         val senhaTextInputLayout = findViewById<TextInputLayout>(id.edt_senha)
         val senhaEditText = findViewById<TextInputEditText>(id.edt_senha_txt)
 
@@ -47,23 +45,7 @@ class CadastroActivity : AppCompatActivity() {
             togglePasswordVisibility(senhaEditText, senhaTextInputLayout)
         }
 
-
     }
-
-    private val textWatcher = object : TextWatcher {
-        override fun beforeTextChanged(charSequence: CharSequence?, start: Int, count: Int, after: Int) {}
-
-        override fun onTextChanged(charSequence: CharSequence?, start: Int, before: Int, count: Int) {}
-
-        override fun afterTextChanged(editable: Editable?) {
-            val nomeValido = binding.edtNomeTxt.text?.isNotBlank() == true
-            val emailValido = android.util.Patterns.EMAIL_ADDRESS.matcher(binding.edtEmailTxt.text?.toString()).matches()
-            val senhaValida = binding.edtSenhaTxt.text?.length ?: 0 >= 6
-
-            binding.btnCadastrar.isVisible = nomeValido && emailValido && senhaValida
-        }
-    }
-
 
     private fun togglePasswordVisibility(editText: TextInputEditText, layout: TextInputLayout) {
         passwordVisible = !passwordVisible

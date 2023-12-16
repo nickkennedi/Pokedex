@@ -138,9 +138,9 @@
     android:fontFamily="@font/poppins_semibold"
     android:text="Criar Conta"
     android:textAllCaps="false"
+    android:alpha="0.4"
     android:textColor="@color/white"
     android:textSize="18sp"
-    android:visibility="invisible"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent" />
