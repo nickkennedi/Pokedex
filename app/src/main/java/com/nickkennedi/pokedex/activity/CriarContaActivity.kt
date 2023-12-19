@@ -1,4 +1,4 @@
-package com.nickkennedi.pokedex
+package com.nickkennedi.pokedex.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

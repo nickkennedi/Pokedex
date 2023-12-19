@@ -4,72 +4,17 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context=".MainActivity"
+  tools:context=".activity.MainActivity"
   android:background="@color/white">
 
-  <ImageView
-    android:id="@+id/treiner_img3"
-    android:layout_width="342dp"
-    android:layout_height="264dp"
-    android:layout_marginStart="17dp"
-    android:layout_marginTop="190dp"
-    android:layout_marginEnd="17dp"
-    android:src="@drawable/treiner_img1"
+
+  <androidx.fragment.app.FragmentContainerView
+    android:id="@+id/fragment_conteudo"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
-
-  <TextView
-    android:id="@+id/titulo"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="37dp"
-    android:fontFamily="@font/poppins_medium"
-    android:text="@string/txt_titulo_StartScreen"
-    android:textSize="26sp"
-    android:textColor="@color/black"
-    android:textAlignment="center"
-    app:layout_constraintTop_toBottomOf="@+id/treiner_img3"
-    app:layout_constraintStart_toStartOf="@+id/treiner_img3"
-    app:layout_constraintEnd_toEndOf="@+id/treiner_img3"/>
-
-  <TextView
-    android:id="@+id/subtitulo"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="16dp"
-    android:fontFamily="@font/poppins"
-    android:text="@string/txt_subtitulo_StartScreen"
-    android:textAlignment="center"
-    android:textColor="@color/black"
-    android:textSize="14sp"
-    app:layout_constraintEnd_toEndOf="@+id/treiner_img3"
-    app:layout_constraintStart_toStartOf="@+id/treiner_img3"
-    app:layout_constraintTop_toBottomOf="@+id/titulo"/>
-
-  <ImageView
-    android:id="@+id/imageView"
-    android:layout_width="45dp"
-    android:layout_height="9dp"
-    android:layout_marginTop="24dp"
-    android:src="@drawable/ponto_screen"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/subtitulo" />
-
-  <androidx.appcompat.widget.AppCompatButton
-    android:id="@+id/btn_start"
-    android:layout_width="328dp"
-    android:layout_height="58dp"
-    android:layout_marginTop="24dp"
-    android:background="@drawable/btn_background"
-    android:elevation="20dp"
-    android:fontFamily="@font/poppins_semibold"
-    android:text="Continuar"
-    android:textAllCaps="false"
-    android:textColor="@color/white"
-    android:textSize="18sp"
-    app:layout_constraintEnd_toEndOf="@+id/treiner_img3"
-    app:layout_constraintStart_toStartOf="@+id/treiner_img3"
-    app:layout_constraintTop_toBottomOf="@+id/imageView"/>
+    app:layout_constraintTop_toTopOf="parent"
+    tools:layout ="@layout/fragment_onboarding"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

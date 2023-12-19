@@ -4,35 +4,17 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context=".MainActivity"
+  tools:context=".activity.MainActivity"
   android:background="@color/white">
-
-  <Button
-    android:id="@+id/btn_pular"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="30dp"
-    android:backgroundTint="@color/white"
-    android:backgroundTintMode="screen"
-    android:fontFamily="@font/poppins_medium"
-    android:text="Pular"
-    android:drawableEnd="@drawable/arrow"
-    android:textAllCaps="false"
-    android:textColor="@color/black"
-    android:textSize="18sp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
-
-
 
   <ImageView
     android:id="@+id/treiner_img3"
-    android:layout_width="356dp"
-    android:layout_height="273dp"
+    android:layout_width="342dp"
+    android:layout_height="264dp"
     android:layout_marginStart="17dp"
-    android:layout_marginTop="120dp"
+    android:layout_marginTop="150dp"
     android:layout_marginEnd="17dp"
-    android:src="@drawable/treiner_img3"
+    android:src="@drawable/treiner_img2"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent" />
@@ -43,7 +25,7 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="37dp"
     android:fontFamily="@font/poppins_medium"
-    android:text="@string/txt_onboarding3_titulo"
+    android:text="@string/txt_onboarding2_titulo"
     android:textSize="26sp"
     android:textColor="@color/black"
     android:textAlignment="center"
@@ -57,7 +39,7 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="16dp"
     android:fontFamily="@font/poppins"
-    android:text="@string/txt_onboarding3_sutitulo"
+    android:text="@string/txt_onboarding2_subtitulo"
     android:textAlignment="center"
     android:textColor="@color/black"
     android:textSize="14sp"
@@ -65,36 +47,29 @@
     app:layout_constraintStart_toStartOf="@+id/treiner_img3"
     app:layout_constraintTop_toBottomOf="@+id/titulo"/>
 
-
+  <ImageView
+    android:id="@+id/imageView"
+    android:layout_width="45dp"
+    android:layout_height="9dp"
+    android:layout_marginTop="24dp"
+    android:src="@drawable/ponto_screen2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/subtitulo" />
 
   <androidx.appcompat.widget.AppCompatButton
-    android:id="@+id/btn_criarConta"
+    android:id="@+id/btn_start"
     android:layout_width="328dp"
-    android:layout_height="58dp"
-    android:layout_marginTop="32dp"
+    android:layout_height="48dp"
+    android:layout_marginTop="24dp"
     android:background="@drawable/btn_background"
     android:elevation="20dp"
     android:fontFamily="@font/poppins_semibold"
-    android:text="Criar conta"
+    android:text="Continuar"
     android:textAllCaps="false"
     android:textColor="@color/white"
     android:textSize="18sp"
     app:layout_constraintEnd_toEndOf="@+id/treiner_img3"
     app:layout_constraintStart_toStartOf="@+id/treiner_img3"
-    app:layout_constraintTop_toBottomOf="@+id/subtitulo"/>
-
-  <Button
-    android:id="@+id/btn_temConta"
-    android:layout_width="328dp"
-    android:layout_height="58dp"
-    android:layout_marginTop="16dp"
-    android:backgroundTint="#FFFFFF"
-    android:fontFamily="@font/poppins_semibold"
-    android:text="Ja tenho uma conta"
-    android:textAllCaps="false"
-    android:textColor="@color/blue_btn"
-    android:textSize="18sp"
-    app:layout_constraintEnd_toEndOf="@+id/treiner_img3"
-    app:layout_constraintStart_toStartOf="@+id/treiner_img3"
-    app:layout_constraintTop_toBottomOf="@+id/btn_criarConta" />
+    app:layout_constraintTop_toBottomOf="@+id/imageView"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

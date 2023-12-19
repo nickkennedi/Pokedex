@@ -1,26 +1,15 @@
-package com.nickkennedi.pokedex
+package com.nickkennedi.pokedex.activity
 
 import android.annotation.SuppressLint
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
 import android.text.InputType
-import android.text.TextWatcher
-import android.view.MotionEvent
-import android.widget.ImageView
-import android.widget.Toast
-import androidx.core.view.isNotEmpty
-import androidx.core.view.isVisible
-import com.google.android.material.bottomappbar.BottomAppBar
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
+import com.nickkennedi.pokedex.R
 import com.nickkennedi.pokedex.R.*
-import com.nickkennedi.pokedex.R.drawable.back
 
 
-import com.nickkennedi.pokedex.R.drawable.eye_false
-import com.nickkennedi.pokedex.R.drawable.eye_true
 import com.nickkennedi.pokedex.databinding.ActivityCadastroBinding
 
 class CadastroActivity : AppCompatActivity() {

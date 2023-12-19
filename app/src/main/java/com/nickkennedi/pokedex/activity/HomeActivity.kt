@@ -1,7 +1,8 @@
-package com.nickkennedi.pokedex
+package com.nickkennedi.pokedex.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.nickkennedi.pokedex.R
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
